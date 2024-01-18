@@ -6,7 +6,6 @@ const table = `${PREFIX}_users`;
 const index = async () => {
     const query = `SELECT * FROM ${table}`;
     const [res] = await connection.execute(query);
-    
     return res;
 }
 
